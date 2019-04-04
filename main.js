@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
       fetch(api)
         .then(res => res.json())
         .then(data => {
-          console.log(data); //to see returned data object
+          //   console.log(data); //to see returned data object
           const { temperature, summary, icon } = data.currently;
           // Set DOM elements
           degree.textContent = temperature;
