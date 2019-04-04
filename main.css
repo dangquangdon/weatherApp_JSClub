@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  /* https://webgradients.com/ */
+  font-family: sans-serif;
+  color: #123456; /* turns out a good one, lol */
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-area {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-area span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-area h2 {
+  font-size: 40px;
+}
